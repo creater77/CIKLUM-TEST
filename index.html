@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title></title>
+  </head>
+  <body>
+    <h3 class="logo">TODOList</h3>
+    <hr class="line">
+    <div class="cont">
+       <i class="fa fa-search icon" id="searchBlock" onclick="search()"></i>
+       <input type="text" id="search" placeholder="search by title" class="search" autocomplete="off">
+    <select id="select1">
+      <option selected disabled hidden>all</option>
+      <option value="open">open</option>
+      <option value="done">done</option>
+    </select>
+    <select id="select2">
+      <option selected disabled hidden>all</option>
+      <option value="high">high</option>
+      <option value="normal">normal</option>
+      <option value="low">low</option>
+    </select>
+
+    <div class="modal">
+      <div class="modal-content">
+        <p class="titl">Title:</p>
+        <input type="text" id="inp1" class="inp" placeholder="Title" maxlength="23"><br>
+        <p class="desc">Description:</p>
+        <input type="text" id="inp2" class="inp" placeholder="Description" maxlength="23"><br>
+        <p class="prior">Priority:</p>
+        <select id="select3">
+          <option value="high"selected>high</option>
+          <option value="normal">normal</option>
+          <option value="low">low</option>
+        </select><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="between">
+        <button class="cancel-btn" id="float">Cancel</button>
+        <button class="save-btn" id="save-btn">Save</button>
+      </div>
+      </div>
+    </div>
+    <input type="button" id="modal-btn" value="Create">
+    <!-- <i class="far fa-check-square"></i> -->
+    <div id="blocks"></div>
+
+    <div id="footer">
+    <hr class="line2">
+    <h3 class="name">Vadym Opalenyk</h3>
+  </div>
+    <script src="script.js"></script>
+  </div>
+
+  </body>
+</html>
